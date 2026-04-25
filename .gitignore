@@ -1,0 +1,39 @@
+# .gitignore is restricted to the artifacts produced by go build and test.
+# for personal setup you can use personal .gitignore: `git config --global core.excludesfile ~/.gitignore`
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Code coverage profiles and other test artifacts
+*.out
+coverage.*
+*.coverprofile
+profile.cov
+
+# Go workspace file
+go.work
+go.work.sum
+
+# Local example secrets.
+examples/llmagent/llmagent.toml
+
+# Local config with provider API keys (root-level only; testdata fixtures OK).
+/adk.toml
+
+# Ignore all adk.toml configs (may contain API keys).
+**/adk.toml
+
+# Local nested repos and external agent experiments.
+other_agent/
+
+refactor/
+# WebUI build artifacts & dependencies
+cmd/launcher/web/webui/node_modules/
+cmd/launcher/web/webui/package-lock.json

@@ -1,0 +1,6 @@
+[model]
+provider = "google"
+name = "gemini-3-flash-preview"
+
+[providers.google]
+api_key = "YOUR_GOOGLE_API_KEY"

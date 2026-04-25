@@ -1,0 +1,6 @@
+[model]
+provider = "google"
+name = "test-model"
+
+[providers.google]
+api_key = "test-api-key"
